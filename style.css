@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --font-family: 'Poppins', sans-serif;
+    --font-size: 15px;
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    padding: 3rem 1rem;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;   
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    color: var(--Very-Dark-Blue);
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.hero h1 a {
+    font-weight: 600;
+}
+
+.hero p {
+    color: var(--Grayish-Blue);
+    font-weight: 400;
+    width: 60%;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.columns {
+    width: 33.3%;
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    border-radius: 7px;
+    padding: 2rem;
+    margin: 2rem 0;
+    height: 260px;
+    max-width: 380px;
+}
+
+.card h2 {
+    color: var(--Very-Dark-Blue);
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+}
+
+.card p {
+    color: var(--Grayish-Blue);
+}
+
+.card img {
+    position: relative;
+    right: -80%;
+    top: 20%;
+    width: 20%;
+}
+
+.vertical-cards {
+    border-top: 4px solid var(--Blue);
+}
+
+#supervisor {
+    border-top: 4px solid var(--Cyan);
+}
+
+#team-builder {
+    border-top: 4px solid var(--Red);
+}
+
+#karma {
+    border-top: 4px solid var(--Orange);
+}
+
+#calculator {
+    border-top: 4px solid var(--Blue);
+}
+
+.attribution {
+    font-size: 11px; 
+    font-weight: 600;
+    text-align: center;
+}
+
+.attribution a { 
+    color: var(--Cyan);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.attribution a:hover {
+    color: var(--Blue);
+}
+
+@media screen and (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .columns {
+        width: 100%;
+        padding: 0;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero p {
+        width: 100%;
+    }
+
+    .card {
+        margin: 1rem 0;
+    }
+
+    .card img {
+        width: 25%;
+        right: -70%;
+        top: 15%;
+    }
+}
